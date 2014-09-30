@@ -24,4 +24,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction) unwindFromResultsViewController:(UIStoryboardSegue *) segue{
+
+    NSLog(@"I have returned from vacation!!!!!");
+}
+
+
+
+
 @end

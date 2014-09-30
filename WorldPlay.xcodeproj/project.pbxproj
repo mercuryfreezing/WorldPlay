@@ -14,6 +14,9 @@
 		F40244BE19DB437100466618 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40244BD19DB437100466618 /* Images.xcassets */; };
 		F40244C119DB437100466618 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40244BF19DB437100466618 /* LaunchScreen.xib */; };
 		F40244CD19DB437100466618 /* WorldPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F40244CC19DB437100466618 /* WorldPlayTests.m */; };
+		F40244D819DB456B00466618 /* EnterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40244D719DB456B00466618 /* EnterNameViewController.m */; };
+		F40244DB19DB497500466618 /* EnterAdjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40244DA19DB497500466618 /* EnterAdjectiveViewController.m */; };
+		F40244DE19DB4BC200466618 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40244DD19DB4BC200466618 /* ResultsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		F40244C619DB437100466618 /* WorldPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40244CB19DB437100466618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F40244CC19DB437100466618 /* WorldPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorldPlayTests.m; sourceTree = "<group>"; };
+		F40244D619DB456B00466618 /* EnterNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterNameViewController.h; sourceTree = "<group>"; };
+		F40244D719DB456B00466618 /* EnterNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterNameViewController.m; sourceTree = "<group>"; };
+		F40244D919DB497500466618 /* EnterAdjectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterAdjectiveViewController.h; sourceTree = "<group>"; };
+		F40244DA19DB497500466618 /* EnterAdjectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterAdjectiveViewController.m; sourceTree = "<group>"; };
+		F40244DC19DB4BC200466618 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		F40244DD19DB4BC200466618 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +95,15 @@
 				F40244B719DB437100466618 /* ViewController.h */,
 				F40244B819DB437100466618 /* ViewController.m */,
 				F40244BA19DB437100466618 /* Main.storyboard */,
+				F40244DC19DB4BC200466618 /* ResultsViewController.h */,
+				F40244DD19DB4BC200466618 /* ResultsViewController.m */,
+				F40244D919DB497500466618 /* EnterAdjectiveViewController.h */,
+				F40244DA19DB497500466618 /* EnterAdjectiveViewController.m */,
 				F40244BD19DB437100466618 /* Images.xcassets */,
 				F40244BF19DB437100466618 /* LaunchScreen.xib */,
 				F40244B019DB437000466618 /* Supporting Files */,
+				F40244D619DB456B00466618 /* EnterNameViewController.h */,
+				F40244D719DB456B00466618 /* EnterNameViewController.m */,
 			);
 			path = WorldPlay;
 			sourceTree = "<group>";
@@ -221,6 +236,9 @@
 			files = (
 				F40244B919DB437100466618 /* ViewController.m in Sources */,
 				F40244B619DB437000466618 /* AppDelegate.m in Sources */,
+				F40244DB19DB497500466618 /* EnterAdjectiveViewController.m in Sources */,
+				F40244DE19DB4BC200466618 /* ResultsViewController.m in Sources */,
+				F40244D819DB456B00466618 /* EnterNameViewController.m in Sources */,
 				F40244B319DB437000466618 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
