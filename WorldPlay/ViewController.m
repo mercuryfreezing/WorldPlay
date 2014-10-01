@@ -26,7 +26,7 @@
 
 -(IBAction) unwindFromResultsViewController:(UIStoryboardSegue *) segue{
 
-    NSLog(@"I have returned from vacation!!!!!");
+    NSLog(@"unwind");
 }
 
 

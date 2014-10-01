@@ -32,6 +32,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *) toAppSegue sender:(id)sender{
+
+    if([self.nameTextField.text length]==0)
+    {
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
+}
 
 
 
