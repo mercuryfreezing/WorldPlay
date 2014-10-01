@@ -21,6 +21,20 @@
     
     NSLog(@"%@, %@, %@ ,%@, %@", self.name, self.adjective, self.noun, self.verb, @"Hi");
 
+    NSMutableAttributedString *displayText = [[NSMutableAttributedString alloc] initWithString: self.resultsTextView.text];
+    [displayText beginEditing];
+    [displayText beginEditing];
+
+    [displayText addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Helvetica-Bold" size:12.0]
+                   range:NSMakeRange(20, 3)];
+    
+    [displayText endEditing];
+
+    NSLog(@"%@", displayText);
+
+
+    //Not sure how to assign resultsTextView to displayText
+
     // Do any additional setup after loading the view.
 
 }
