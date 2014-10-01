@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [self.nameTextField becomeFirstResponder];//Control of the keyboard goes to nameTextField
 
     // Do any additional setup after loading the view.
 }

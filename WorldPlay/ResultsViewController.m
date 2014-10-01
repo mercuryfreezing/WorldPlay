@@ -21,16 +21,16 @@
     
     NSLog(@"%@, %@, %@ ,%@, %@", self.name, self.adjective, self.noun, self.verb, @"Hi");
 
-    NSMutableAttributedString *displayText = [[NSMutableAttributedString alloc] initWithString: self.resultsTextView.text];
-    [displayText beginEditing];
-    [displayText beginEditing];
 
-    [displayText addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Helvetica-Bold" size:12.0]
-                   range:NSMakeRange(20, 3)];
-    
-    [displayText endEditing];
 
-    NSLog(@"%@", displayText);
+    NSString *madLibString = [NSString stringWithFormat:@"%@, %@ %@ %@ %@ %@ %@ %@", @"One day" , self.name , @"was learning how to be"  ,self.adjective , @"when his", self.noun, @"took a beating and his girl friend got very", self.verb];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:madLibString];
+    [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:16.0] range:[attributedString.string rangeOfString:self.name]];
+    [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:16.0] range:[attributedString.string rangeOfString:self.adjective]];
+    [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:16.0] range:[attributedString.string rangeOfString:self.verb]];
+    [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:16.0] range:[attributedString.string rangeOfString:self.noun]];
+
+    self.resultsTextView.attributedText = attributedString;
 
 
     //Not sure how to assign resultsTextView to displayText
