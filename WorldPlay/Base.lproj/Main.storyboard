@@ -134,18 +134,6 @@
                                     <rect key="frame" x="16" y="109" width="368" height="17"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYp-VH-A2H">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="See ad lib">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="21" y="469" width="363" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="4rH-Fu-IpL" kind="show" identifier="toResultsSegue" id="WpB-b6-bnX"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tnK-6F-TMu">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -154,20 +142,32 @@
                                     <rect key="frame" x="11" y="147" width="300" height="30"/>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYp-VH-A2H">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="277" width="363" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="gvP-n6-ncE" kind="show" identifier="toNounSegue" id="hwZ-45-sX4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="fms-58-cSS"/>
-                                <exclude reference="xYp-VH-A2H"/>
                                 <exclude reference="tnK-6F-TMu"/>
+                                <exclude reference="xYp-VH-A2H"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="fms-58-cSS"/>
-                                <include reference="xYp-VH-A2H"/>
                                 <include reference="tnK-6F-TMu"/>
+                                <include reference="xYp-VH-A2H"/>
                             </mask>
                         </variation>
                     </view>
@@ -178,6 +178,136 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iri-Ds-JJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2739" y="358"/>
+        </scene>
+        <!--Enter Noun View Controller-->
+        <scene sceneID="4Ge-ac-lXj">
+            <objects>
+                <viewController id="gvP-n6-ncE" customClass="EnterNounViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qOi-zn-xYE"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Rg-1F-KIa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ppT-eY-8Ru">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a noun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbe-4O-WA7">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="110" width="98" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OlE-dk-0ae">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="150" width="224" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhQ-pc-gmc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="155" y="277" width="32" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="Hen-xT-1jd" kind="show" identifier="toVerbSegue" id="IMY-8m-eS2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="dbe-4O-WA7"/>
+                                <exclude reference="OlE-dk-0ae"/>
+                                <exclude reference="YhQ-pc-gmc"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="dbe-4O-WA7"/>
+                                <include reference="OlE-dk-0ae"/>
+                                <include reference="YhQ-pc-gmc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="nounField" destination="OlE-dk-0ae" id="SwS-Uo-fcl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XJZ-rC-zdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3496.5" y="358"/>
+        </scene>
+        <!--Enter Verb View Controller-->
+        <scene sceneID="nEc-Is-1rT">
+            <objects>
+                <viewController id="Hen-xT-1jd" customClass="EnterVerbViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zxf-4f-kaZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ssu-ng-BqN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G0R-Z9-qJ0">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a Verb" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UI1-Ok-xKY">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="111" width="94" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dx-7q-JTO">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="148" width="225" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83z-VG-aXt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="See ad lib">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="267" width="69" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="4rH-Fu-IpL" kind="show" identifier="toResultsSegue" id="23Y-ZS-iNa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="UI1-Ok-xKY"/>
+                                <exclude reference="1dx-7q-JTO"/>
+                                <exclude reference="83z-VG-aXt"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="UI1-Ok-xKY"/>
+                                <include reference="1dx-7q-JTO"/>
+                                <include reference="83z-VG-aXt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="verbField" destination="1dx-7q-JTO" id="PFP-vz-Uoq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJD-e4-1Fb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4236" y="365"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="IJl-4A-xHz">
@@ -235,7 +365,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pUa-MK-K2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ZQz-fN-CYt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3459" y="358"/>
+            <point key="canvasLocation" x="4977" y="365"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mTq-3A-YvF">

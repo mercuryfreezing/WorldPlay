@@ -7,7 +7,7 @@
 //
 
 #import "EnterAdjectiveViewController.h"
-#import "ResultsViewController.h"
+#import "EnterNounViewController.h"
 
 @interface EnterAdjectiveViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *adjectiveTextField;
@@ -43,9 +43,13 @@
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 
-    ResultsViewController *resultsViewController = segue.destinationViewController;
-    resultsViewController.adjective = self.adjectiveTextField.text;
-    resultsViewController.name = self.name;
+    EnterNounViewController *nounViewCountroller = segue.destinationViewController;
+    nounViewCountroller.adjective = self.adjectiveTextField.text;
+    nounViewCountroller.name = self.name;
+
+//    ResultsViewController *resultsViewController = segue.destinationViewController;
+//    resultsViewController.adjective = self.adjectiveTextField.text;
+//    resultsViewController.name = self.name;
 }
 /*
 #pragma mark - Navigation

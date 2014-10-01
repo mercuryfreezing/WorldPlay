@@ -17,6 +17,8 @@
 		F40244D819DB456B00466618 /* EnterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40244D719DB456B00466618 /* EnterNameViewController.m */; };
 		F40244DB19DB497500466618 /* EnterAdjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40244DA19DB497500466618 /* EnterAdjectiveViewController.m */; };
 		F40244DE19DB4BC200466618 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40244DD19DB4BC200466618 /* ResultsViewController.m */; };
+		F4AA24FE19DBFA320015FF39 /* EnterNounViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AA24FD19DBFA320015FF39 /* EnterNounViewController.m */; };
+		F4AA250119DBFBDD0015FF39 /* EnterVerbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AA250019DBFBDD0015FF39 /* EnterVerbViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		F40244DA19DB497500466618 /* EnterAdjectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterAdjectiveViewController.m; sourceTree = "<group>"; };
 		F40244DC19DB4BC200466618 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		F40244DD19DB4BC200466618 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		F4AA24FC19DBFA320015FF39 /* EnterNounViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterNounViewController.h; sourceTree = "<group>"; };
+		F4AA24FD19DBFA320015FF39 /* EnterNounViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterNounViewController.m; sourceTree = "<group>"; };
+		F4AA24FF19DBFBDD0015FF39 /* EnterVerbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterVerbViewController.h; sourceTree = "<group>"; };
+		F4AA250019DBFBDD0015FF39 /* EnterVerbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterVerbViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,10 @@
 				F40244B719DB437100466618 /* ViewController.h */,
 				F40244B819DB437100466618 /* ViewController.m */,
 				F40244BA19DB437100466618 /* Main.storyboard */,
+				F4AA24FF19DBFBDD0015FF39 /* EnterVerbViewController.h */,
+				F4AA250019DBFBDD0015FF39 /* EnterVerbViewController.m */,
+				F4AA24FC19DBFA320015FF39 /* EnterNounViewController.h */,
+				F4AA24FD19DBFA320015FF39 /* EnterNounViewController.m */,
 				F40244DC19DB4BC200466618 /* ResultsViewController.h */,
 				F40244DD19DB4BC200466618 /* ResultsViewController.m */,
 				F40244D919DB497500466618 /* EnterAdjectiveViewController.h */,
@@ -234,11 +244,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4AA250119DBFBDD0015FF39 /* EnterVerbViewController.m in Sources */,
 				F40244B919DB437100466618 /* ViewController.m in Sources */,
 				F40244B619DB437000466618 /* AppDelegate.m in Sources */,
 				F40244DB19DB497500466618 /* EnterAdjectiveViewController.m in Sources */,
 				F40244DE19DB4BC200466618 /* ResultsViewController.m in Sources */,
 				F40244D819DB456B00466618 /* EnterNameViewController.m in Sources */,
+				F4AA24FE19DBFA320015FF39 /* EnterNounViewController.m in Sources */,
 				F40244B319DB437000466618 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +442,7 @@
 				F40244D219DB437100466618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F40244D319DB437100466618 /* Build configuration list for PBXNativeTarget "WorldPlayTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +451,7 @@
 				F40244D519DB437100466618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

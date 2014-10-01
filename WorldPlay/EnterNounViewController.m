@@ -1,33 +1,37 @@
 //
-//  ResultsViewController.m
+//  EnterNounViewController.m
 //  WorldPlay
 //
-//  Created by roshan on 30/09/2014.
+//  Created by roshan on 01/10/2014.
 //  Copyright (c) 2014 learningIOS. All rights reserved.
 //
 
-#import "ResultsViewController.h"
+#import "EnterNounViewController.h"
+#import "EnterVerbViewController.h"
 
-@interface ResultsViewController ()
-@property (weak, nonatomic) IBOutlet UITextView *resultsTextView;
+@interface EnterNounViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *nounField;
 
 @end
 
-@implementation ResultsViewController
+@implementation EnterNounViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.resultsTextView.text = [NSString stringWithFormat:@"%@, %@ %@ %@ %@ %@ %@ %@", @"One day" , self.name , @"was learning how to be"  ,self.adjective , @"when his", self.noun, @"took a beating and his girl friend got very", self.verb];
-    
-    NSLog(@"%@, %@, %@ ,%@, %@", self.name, self.adjective, self.noun, self.verb, @"Hi");
-
     // Do any additional setup after loading the view.
-
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+
+    EnterVerbViewController *verbViewController = segue.destinationViewController;
+    verbViewController.noun = self.nounField.text;
+    verbViewController.adjective = self.adjective;
+    verbViewController.name = self.name;
 }
 
 /*
