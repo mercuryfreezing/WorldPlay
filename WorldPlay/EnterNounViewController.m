@@ -26,6 +26,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *) toVerbSegue sender:(id)sender{
+
+    if([self.nounField.text length]==0)
+    {
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
+}
+
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 
     EnterVerbViewController *verbViewController = segue.destinationViewController;

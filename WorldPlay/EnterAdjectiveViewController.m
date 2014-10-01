@@ -29,7 +29,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(BOOL)shouldPerformSegueWithIdentifier:(NSString *) toResultsSegue sender:(id)sender{
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *) toNounSegue sender:(id)sender{
 
     if([self.adjectiveTextField.text length]==0)
     {

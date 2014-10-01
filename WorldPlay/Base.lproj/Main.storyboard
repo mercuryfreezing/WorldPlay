@@ -85,7 +85,7 @@
                                     <rect key="frame" x="136" y="212" width="32" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="xeG-ZK-Kkp" kind="show" identifier="toAppSegue" id="dkj-gW-tqI"/>
+                                    <segue destination="xeG-ZK-Kkp" kind="show" identifier="toAdjectiveSegue" id="dkj-gW-tqI"/>
                                 </connections>
                             </button>
                         </subviews>
